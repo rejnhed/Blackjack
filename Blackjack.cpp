@@ -503,7 +503,7 @@ int main()
     srand(time(NULL));
     Deck deck(n, sernumb);
     Card curr_card;
-    //* Just for admins :)
+    /* Just for admins :)
     deck.print();
     cout << "Number of clubs = " << deck.suit_count("clubs") << endl;
     cout << "Number of diamonds = " << deck.suit_count("diamonds") << endl;
