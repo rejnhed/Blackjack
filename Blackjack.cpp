@@ -503,7 +503,7 @@ int main()
     srand(time(NULL));
     Deck deck(n, sernumb);
     Card curr_card;
-    /* Just for admins :)
+    //* Just for admins :)
     deck.print();
     cout << "Number of clubs = " << deck.suit_count("clubs") << endl;
     cout << "Number of diamonds = " << deck.suit_count("diamonds") << endl;
@@ -532,7 +532,7 @@ int main()
             player1.addCard(deck.draw());
             if (player1.getCP() > 21)
             {
-                if (player1.getAceB() > 0) 
+                if (player1.getAceB() > 0)
                 {
                     player1.decrementAceB();
                     player1.setCP(-10);
@@ -546,7 +546,7 @@ int main()
         case 's':
             game_flag = false;
             break;
-        case 'p':  
+        case 'p':
             for (size_t i = player1.getCCB(); i < n; i++)
             {
                 if (21 - player1.getCP() == (deck.getCard(i)).getValue())
@@ -569,7 +569,8 @@ int main()
         cout << "Too drew too much!\n";
         cout << "You lose!";
         game_flag = false;
-    } else {
+    }
+    else {
 
         while (dealer.getCP() <= 17)
         {
